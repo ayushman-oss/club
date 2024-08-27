@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+        font-family:'Courier New', Courier, monospace;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+       
+        background-color: #111; /* Dark background */
+        color: white;
+    }
+    canvas {
+        
+        background-color: transparent; /* Set background color to transparent */
+    }
+    
+
+    h1 {
+        color: #333;
+        
+    }
+  </style>
+
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Header with Navigation -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold">D & R Club</div>
+      <nav class="space-x-6">
+        <a href="#about" class="text-gray-800 hover:text-blue-500">About</a>
+        <a href="#what-we-do" class="text-gray-800 hover:text-blue-500">What We Do</a>
+        <a href="#gallery" class="text-gray-800 hover:text-blue-500">Gallery</a>
+        <a href="#projects" class="text-gray-800 hover:text-blue-500">Projects</a>
+        <a href="#contact" class="text-gray-800 hover:text-blue-500">Contact</a>
+      </nav>
+    </div>
+
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-6 text-center">About Us</h2>
+      <p class="text-lg text-center">A club dedicated to making robots and drones
+      </p>
+    </div>
+  </section>
+
+  <!-- What We Do Section -->
+  <section id="what-we-do" class="py-16 bg-gray-200">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-6 text-center">What We Do</h2>
+      <p class="text-lg text-center">A lot of activities
+      </p>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-6 text-center">Gallery</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <!-- Gallery items go here -->
+        <div class="bg-gray-300 h-64"></div>
+        <div class="bg-gray-300 h-64"></div>
+        <div class="bg-gray-300 h-64"></div>
+        <!-- Add more gallery items as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 bg-gray-200">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-6 text-center">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Project items go here -->
+        <div class="bg-white p-6 shadow-md rounded-lg">
+          <h3 class="text-2xl font-bold mb-4">Project Title</h3>
+          <p class="text-lg">Brief description of the project.</p>
+        </div>
+        <div class="bg-white p-6 shadow-md rounded-lg">
+          <h3 class="text-2xl font-bold mb-4">Project Title</h3>
+          <p class="text-lg">Brief description of the project.</p>
+        </div>
+        <!-- Add more projects as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-6 text-center">Contact Us</h2>
+      <form class="max-w-lg mx-auto">
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700" id="name" type="text" placeholder="Your Name">
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700" id="email" type="email" placeholder="Your Email">
+        </div>
+        <div class="mb-6">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Message</label>
+          <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700" id="message" rows="4" placeholder="Your Message"></textarea>
+        </div>
+        <div class="flex items-center justify-between">
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="button">Send</button>
+        </div>
+      </form>
+    </div>
+
+  </section>
+
+
+
+</body>
+</html>
